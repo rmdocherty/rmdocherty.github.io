@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title> Ed-Aid</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
+<link rel="stylesheet" type="text/css" href="GalleryCSS.css">
+<link rel="stylesheet" type="text/css" href="move.css">
+<script src = "screenCheckGallery.js"></script>
+<html>
+<body>
+<div class = "projectTitles">
+	<h1>Equipment and Donations</h1>
+</div>
+<div class ="dot8"><a href = "Ed-Aid.html">Home</a></div>
+<div class ="dot7"><a href = "Projects.html">Projects</a></div>
+<div class ="textbox"  id ="3">We began in 1991, sending a small shipment of only 25 boxes, since then we have sent 75 shipments, with 14,000 boxes, at a cost of £38666 to the Gambia. In 1991, schools in the Gambia needed help. Education wasn't compulsory and was only designed for pupils aged 7-14. The Catholic Mission built schools where they could, but they had to pay all the staff, and provide all the equipment.</div>
+<div class="w3-content w3-display-container" onclick="screenTap(1)" >
+<p class = "p1">Tap for more</p>
+  <img class="mySlides" src="250car.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250pallet.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250boxes.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250pig.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250casava.jpg" style="width:100%" "height = 100%">
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+<script>
+if ( screen.width < 500){
+var mobile = 1
+function screenTap(n) {
+  showDivs(slideIndex += n);
+  document.getElementById("3").innerHTML= text[slideIndex-1];
+}}
+console.log(mobile)
+var slideIndex = 1;
+
+showDivs(slideIndex);
+var text = ["We began in 1991, sending a small shipment of only 25 boxes, since then we have sent 75 shipments, with 14,000 boxes, at a cost of £38666 to the Gambia. In 1991, schools in the Gambia needed help. Education wasn't compulsory and was only designed for pupils aged 7-14. The Catholic Mission built schools where they could, but they had to pay all the staff, and provide all the equipment.",
+"In the past various orginisations have helped the CES (Catholic Education Secretariat) finacially, but many of these have fallen by the wayside, meaning Ed-Aid is the only orginisation that the CES can rely on to send regular supplies of crucial educational equipment and finacial aid. The eduactional equipment sent is from kind donations from people, packed into boxes by our dedicated team and then shipped to Gambia.",
+"The Education Secretariat in Gambia has an Ed-Aid store, where the donated goods await distribution to all the schools. Pictured here is an Ed-Aid team member sorting these goods during the annual visit to Gambia to see the progress made.",
+"Money from donations is also used to buy cookers, fencing, trees, seeds, repair well pumps and rear animals, like pigs or sheeps. The local schools teach farming, so Ed-Aid sponsors animal breeding and fattening projects too.",
+"Pictured here are two Ed-Aid members on the annual visit, standing by two Casava trees, which generate a good profit for the local communtiy, directly funded by your generous donations.",
+]
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+  document.getElementById("3").innerHTML= text[slideIndex-1];
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
+</body>
+</html>

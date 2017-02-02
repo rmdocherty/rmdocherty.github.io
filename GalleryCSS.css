@@ -1,0 +1,331 @@
+body{
+margin: 0px 0px;
+font-size: auto;
+}
+a{color: inherit;}
+a:link{text-decoration: none;}
+a:hover{
+color:rgba(19,124,194,0.5);}
+.p1{color: black;
+font-size:8vmin;
+position:relative;
+top:50%;
+animation-name: fade4;
+animation-delay: 5s;
+animation-duration: 1.5s,1.5s;
+animation-fill-mode: forwards;
+opacity: 0;
+}
+
+.mainShape{
+	position:absolute;
+	width:53%;
+	height:50%;
+	padding-left:2%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+	font-size: 7vmin;
+	-webkit-border-radius: 0px 0px 400px 0px;
+	-moz-border-radius: 0px 0px 400px 0px;
+	border-radius: 0px 0px 400px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size,fade;
+    animation-duration: 2s,1s;
+	animation-delay: 0s, 2s;
+	animation-fill-mode: forwards;
+		background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+.projectTitles{
+	position:absolute;
+	width:70%;
+	height:30%;
+	padding-left:2%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+
+	font-size: 4vmin;
+	-webkit-border-radius: 0px 0px 400px 0px;
+	-moz-border-radius: 0px 0px 400px 0px;
+	border-radius: 0px 0px 400px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size4,fade;
+    animation-duration: 2s,1s;
+	animation-delay: 0s, 2s;
+	animation-fill-mode: forwards;
+		background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+.shape2{	position:absolute;
+	font-size: 2.3vmin;
+	bottom:0%;
+	right:0%;
+	width:57%;
+	height:50%;
+	padding-left:2%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+	-webkit-border-radius: 350px 0px 0px 0px;
+	-moz-border-radius: 350px 0px 0px 0px;
+	border-radius: 350px 0px 0px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size2,fade;
+    animation-duration: 2s,1s;
+	animation-delay: 0s, 2s;
+	animation-fill-mode: forwards;
+		background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+	}
+.shape2padding{
+	padding-top:21%;
+	padding-left:15%;
+	word-wrap:break-word;
+}
+
+}
+.shape3padding{
+	position:absolute;
+	left: 15%;
+
+	word-wrap:break-word;
+	padding-top:25%;
+}
+.dot1{
+	position:absolute;
+	margin: 3%;
+	top: 17%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move1, fade;
+	animation-duration: 1s,1s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot2{
+	position:absolute;
+	margin: 3%;
+	top: 35%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move2, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot3{
+	position:absolute;
+	margin: 3%;
+	top: 4%;
+	left: 55%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move9, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot4{
+	position:absolute;
+	margin-left: 10%;
+	top:4%;
+	left:60%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move8, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot5{
+	margin-left: 10%;
+	position:absolute;
+	margin: 0%;
+	top:17%;
+	left:58%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move10, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2.5s,2.5s;
+	animation-fill-mode: forwards;
+}
+.dot6{
+	position:absolute;
+	margin: 3%;
+	top: 4%;
+	left: 55%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move9, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot7{
+	position:absolute;
+	margin-left: 10%;
+	top:4%;
+	left:60%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move8, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot8{
+	margin-left: 10%;
+	position:absolute;
+	margin: 0%;
+	top:17%;
+	left:58%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move10, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2.5s,2.5s;
+	animation-fill-mode: forwards;
+}
+
+.projectext{
+	position:absolute;
+	top: 90%;
+	right:90%;
+	height: 10%;
+	width:10%;
+	background-color: rgba(255,0,0,0.5);
+}
+.equipment{
+	position:absolute;
+	top: 44%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 5vmin;
+	animation: cascade1, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.building{
+	position:absolute;
+	top: 59%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 5vmin;
+	animation: cascade2, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.years{
+	position:absolute;
+
+	top: 74%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 5vmin;
+	animation: cascade3, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.textbox{
+	position: absolute;
+	margin-left: 3%;
+	bottom: 16%;
+	height: 40%;
+	width: 45%;
+		font-family: Open Sans;
+	font-size: 1.2em;
+	animation: fade;
+	animation-duration:2s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+	color:transparent;
+}
+@keyframes size{
+from {width:0%;}
+to{width:45%}
+from{height:0%;}
+to{height:42%;}	 	
+}
+@keyframes size2{
+from {width:0%;}
+to{width:57%}
+from{height:0%;}
+to{height:69%;}	 	
+}
+@keyframes size3{
+from {width:0%;}
+to{width:20%}
+from{height:0%;}
+to{height:20%;}	 	
+}
+@keyframes size4{
+from {width:0%;}
+to{width:60%}
+from{height:0%;}
+to{height:35%;}	 	
+}
+@keyframes fade{
+	from {color: transparent}
+	to {color: rgba(0,0,1,0.7);}
+}
+@keyframes fade2{
+	from {opacity: 0}
+	to {opacity:1}
+}

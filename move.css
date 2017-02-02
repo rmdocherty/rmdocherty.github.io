@@ -1,0 +1,78 @@
+@keyframes move1{
+	from {top:22%}
+	to {top:17%}
+	from {left:75%}
+	to {left:75%}
+}
+@keyframes move2{
+	from {top:35%}
+	to {top:38%}
+	from {left:3%}
+	to {left:3%}
+}
+@keyframes move3{
+	from {top:3%}
+	to {top:4%}
+	from {left:50%}
+	to {left:57%}
+}
+@keyframes move4{
+	from {top:67%}
+	to {top:72%}
+	from {left:46%}
+	to {left:49%}
+}
+@keyframes move5{
+	from {top:58%}
+	to {top:62%}
+	from {left:61%}
+	to {left:64%}
+}
+@keyframes move6{
+	from {top:45%}
+	to {top:49%}
+	from {left:24%}
+	to {left:26%}
+}
+@keyframes move7{
+	from {top:61%}
+	to {top:64%}
+	from {left:4%}
+	to {left:6%}
+}
+@keyframes move8{
+	from {top:4%}
+	to {top:5%}
+	from {left:60%}
+	to {left:65%}
+}
+@keyframes move9{
+	from {top:4%}
+	to {top:7%}
+	from {left:45%}
+	to {left:53%}
+}
+@keyframes move10{
+	from {top:17%}
+	to {top:19%}
+	from {left:63%}
+	to {left:69%}
+}
+@keyframes cascade1{
+	from {top:38%}
+	to {top:44%}
+	from{left:2%}
+	to{left:2%}
+}
+@keyframes cascade2{
+	from {top:38%}
+	to {top:59%}
+	from{left:2%}
+	to{left:2%}
+}
+@keyframes cascade3{
+	from {top:38%}
+	to {top:74%}
+	from{left:2%}
+	to{left:2%}
+}

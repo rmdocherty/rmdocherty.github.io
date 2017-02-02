@@ -1,0 +1,179 @@
+body{
+margin: 0px 0px;
+}
+a{color: inherit;}
+a:link{text-decoration: none;}
+a:hover{
+	color:rgba(19,124,194,0.5);
+}
+p{font-size:2em}
+ul{font-size:3vmin;
+text-align:left;}
+.mainShape{
+	position:absolute;
+	width:73%;
+	height:75%;
+	padding-left:10%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+	font-size: 10vmin;
+	-webkit-border-radius: 0px 0px 400px 0px;
+	-moz-border-radius: 0px 0px 400px 0px;
+	border-radius: 0px 0px 400px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size,fade;
+    animation-duration: 2s,1s;
+	animation-delay: 0s, 2s;
+	animation-fill-mode: forwards;
+	background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+.mainPageTextBox{
+	position:relative;
+	bottom:25%;
+	width:50%;
+	height:17%;
+	font-family: Open Sans;
+	font-size: 3vmin;
+	text-align:left;
+
+	padding-top: 4%;
+}
+.mainPageTextBox1{
+	position:relative;
+	bottom:25%;
+	width:50%;
+	height:17%;
+	font-family: Open Sans;
+	font-size: 3vmin;
+	text-align:left;
+
+	padding-top: 4%;
+}
+.thing2{visibility:hidden;
+height:0%;
+width:0%;}
+.dot1{
+	position:absolute;
+	margin: 3%;
+	top: 0%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move1, fade;
+	animation-duration: 2s,2s;
+animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+.dot2{
+	position:fixed;
+	margin: 3%;
+	top: 38%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move2, fade;
+	animation-duration: 2s,2s;
+	animation-delay:2.3s,2.3s;
+	animation-fill-mode: forwards;
+}
+.dot3{
+	position:absolute;
+	margin: 3%;
+	top: 65%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move3, fade;
+	animation-duration: 2s,2s;
+animation-delay:2.6s,2.6s;
+	animation-fill-mode: forwards;
+}
+.dot4{
+	position:absolute;
+	margin: 3%;
+	top: 72%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move4, fade;
+	animation-duration: 2s,2s;
+animation-delay:2.9s,2.9s;
+	animation-fill-mode: forwards;
+}
+.dot5{
+	position:absolute;
+	margin: 3%;
+	top: 0%;
+	left: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: transparent;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 6.5vmin;
+	animation: move1, fade;
+	animation-duration: 2s,2s;
+animation-delay:2s,2s;
+	animation-fill-mode: forwards;
+}
+html, body {height: 100%} 
+@keyframes size{
+from {width:0%;}
+to{width:73%}
+from{height:0%;}
+to{height:75%;}	 	
+
+}
+@keyframes fade{
+	from {color: transparent}
+	to {color: rgba(0,0,1,0.7);}
+}
+@keyframes move1{
+	from {top:0%}
+	to {top:3%}
+	from {left:80%}
+	to {left:83%}
+}
+@keyframes move2{
+	from {top:38%}
+	to {top:41%}
+	from {left:73%}
+	to {left:76%}
+}
+@keyframes move3{
+	from {top:65%}
+	to {top:69%}
+	from {left:53%}
+	to {left:58%}
+}
+@keyframes move4{
+	from {top:68%}
+	to {top:73%}
+	from {left:8%}
+	to {left:18%}
+}

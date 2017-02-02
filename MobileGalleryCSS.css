@@ -1,0 +1,310 @@
+body{
+margin: 0px 0px;
+}
+a{color: inherit;}
+a:link{text-decoration: none;}
+a:hover{
+	color:rgba(19,124,194,0.5);
+}
+.p1{color:rgba(19,124,194,0.5);
+font-size:13vmin;
+font-family: Open sans;
+position:fixed;
+top:40%;
+left: 5%;
+background-color:rgba(255,255,255,0.7);
+animation-name: fade4,fade5;
+animation-duration: 2s,1s;
+animation-delay: 4s,1s;
+animation-fill-mode: forwards;		text-align: center;
+			border-radius: 108px 108px 108px 108px;
+-moz-border-radius: 108px 108px 108px 108px;
+-webkit-border-radius: 108px 108px 108px 108px;
+border: 8px solid transparent;
+height:10%;
+	width:80%;
+		padding-left: 3%;
+	padding-right: 3%;
+	padding-top:2%;
+	padding-bottom:2%;
+	-webkit-box-shadow: 0px 4px 47px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 47px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 47px 2px rgba(0,0,0,0.75);
+}
+.mainShape{
+	position:absolute;
+	padding-left:10%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+	font-size: 10vmin;
+	-webkit-border-radius: 0px 0px 400px 0px;
+	-moz-border-radius: 0px 0px 400px 0px;
+	border-radius: 0px 0px 400px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size,fade;
+    animation-duration: 1.5s,1.5s;
+	animation-delay: 0s, 1s;
+	animation-fill-mode: forwards;
+	padding-bottom:14%;
+	background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+.shape2{
+	position:absolute;
+	top: 38%;
+	font-family: Open Sans;
+	font-size: 4vmin;
+	color:transparent;
+	padding-left: 3%;
+	padding-right:3%;
+	animation: fade;
+	animation-duration:1.5s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+}
+.mainPageTextBox{
+	visibility: hidden;
+}
+.dot1{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 12vmin;
+	animation: cascade1, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+}
+.dot2{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 12vmin;
+	animation: homePageCascade2, fade;
+	animation-duration: 1.8s,1.8s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+}
+.dot3{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 12vmin;
+	animation: homePageCascade3, fade;
+	animation-duration: 2.1s,2.1s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+}
+.dot4{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 12vmin;
+	animation: homePageCascade4, fade;
+	animation-duration: 2.6s,2.6s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+}
+.dot6{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 9vmin;
+	animation: homePageCascade6, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+}
+.dot7{position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 8vmin;
+	animation: projectsHome, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;}
+.dot8{
+	position:absolute;
+	top:38%;
+	left:48%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 8vmin;
+	animation: projectsProjects, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;}
+}
+.projectext{
+	position:absolute;
+	top: 90%;
+	right:90%;
+	height: 10%;
+	width:10%;
+	background-color: rgba(255,0,0,0.5);
+}
+.equipment{
+	position:absolute;
+	top: 44%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 7vmin;
+	animation: homePageCascade5, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1s,1s;
+	animation-fill-mode: forwards;
+		text-align: center;
+			border-radius: 108px 108px 108px 108px;
+-moz-border-radius: 108px 108px 108px 108px;
+-webkit-border-radius: 108px 108px 108px 108px;
+border: 8px solid transparent;
+height:10%;
+	width:65%;	padding-left: 3%;
+	padding-right: 3%;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+.shape4{	position:absolute;
+	bottom:0%;
+	right:0%;
+	padding-left:2%;
+	background:rgba(19,124,194,0.5);
+	-webkit-border-radius: 350px 0px 0px 0px;
+	-moz-border-radius: 350px 0px 0px 0px;
+	border-radius: 350px 0px 0px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size2,fade;
+    animation-duration: 2s,1s;
+	animation-delay: 0s, 2s;
+	animation-fill-mode: forwards;
+	background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+	}
+	@keyframes size2{
+from {width:0%;}
+to{width:80%}
+from{height:0%;}
+to{height:12%;}	 	
+}
+.building{
+	position:absolute;
+	top: 59%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 7vmin;
+	animation: homePageCascade3, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1.2s,1.2s;
+	animation-fill-mode: forwards;
+		text-align: center;
+			border-radius: 108px 108px 108px 108px;
+-moz-border-radius: 108px 108px 108px 108px;
+-webkit-border-radius: 108px 108px 108px 108px;
+border: 8px solid transparent;
+height:10%;
+	width:65%;
+		padding-left: 3%;
+	padding-right: 3%;
+	padding-top:2%;
+}
+.years{
+	position:absolute;
+	top: 74%;
+	left: 2%;
+	color:transparent;
+	font-family: Open Sans;
+	font-size: 7vmin;
+	animation: homePageCascade4, fade;
+	animation-duration: 1.5s,1.5s;
+	animation-delay:1.4s,1.4s;
+	animation-fill-mode: forwards;
+		text-align: center;
+			border-radius: 108px 108px 108px 108px;
+-moz-border-radius: 108px 108px 108px 108px;
+-webkit-border-radius: 108px 108px 108px 108px;
+border: 8px solid transparent;
+height:10%;
+	width:65%;
+		padding-left: 3%;
+	padding-right: 3%;
+	padding-top:2%;
+}
+.projectTitles{
+	position:absolute;
+	width:70%;
+	height:30%;
+	padding-left:2%;
+	background:rgba(19,124,194,0.5);
+	font-family: Open Sans;
+	font-size: 4vmin;
+	-webkit-border-radius: 0px 0px 400px 0px;
+	-moz-border-radius: 0px 0px 400px 0px;
+	border-radius: 0px 0px 400px 0px;
+	color:rgba(0,0,1,0);
+	animation-name: size,fade;
+    animation-duration: 1s,1s;
+	animation-delay: 0s, 1s;
+	animation-fill-mode: forwards;
+		background: rgb(99,182,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+.textbox{
+	position: absolute;
+	margin-left: 3%;
+	top: 75%;
+	font-family: Open Sans;
+	font-size: 4vmin;
+	animation: fade;
+	animation-duration:1s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+	color:transparent;
+	
+}
+@keyframes size{
+from {width:0%;}
+to{width:85%}
+from{height:0%;}
+to{height:20%;}	 	
+}
+@keyframes fade{
+	from {color: transparent}
+	to {color: rgba(0,0,1,0.7);}
+		from {border-color: transparent;}
+	to{border-color: rgba(19,124,194,0.5)}
+}
+@keyframes fade3{
+	from {opacity:0}
+	to{opacity:1}
+}
+@keyframes fade4{
+	from {opacity:1}
+	to{opacity:0}
+}
+@keyframes fade5{
+	from {color: transparent}
+	to {color: rgba(0,0,0,0.7);}
+
+}

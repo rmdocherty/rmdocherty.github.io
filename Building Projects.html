@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<title> Ed-Aid</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
+<link rel="stylesheet" type="text/css" href="GalleryCSS.css">
+<link rel="stylesheet" type="text/css" href="move.css">
+<link rel="stylesheet" href="w3css.css">
+<script src = "screenCheckGallery.js"></script>
+<html>
+<body>
+<div class = "projectTitles">
+	<h1>Building Projects</h1>
+</div>
+<div class ="dot8"><a href = "Ed-Aid.html">Home</a></div>
+<div class ="dot7"><a href = "Projects.html">Projects</a></div>
+<div class ="textbox"  id ="3">Ed-Aid supports Building Project. We have sponsored a number of building projects but there are still many more needed. Fortunately, costs in Gambia are much less than in the UK and usually the local villagers do some of the work, often for just a bag of rice! This has enabled us to undertake a number of projects. For example, this building was going to be a home economics room.
+</div>
+<div class="w3-content w3-display-container" onclick="plusDivs(1)">
+<p class = "p1">Tap for more</p>
+  <img class="mySlides" src="250blkruin.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250building.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250sambclas.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250class.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250kitoilo.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250kitoiln.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250tsqtrs.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250darsrebl.jpg" style="width:100%" "height = 100%">
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+var text = ["Ed-Aid supports Building Projects. We have sponsored a number of building projects but there are still many more needed. Fortunately, costs in Gambia are much less than in the UK and usually the local villagers do some of the work, often for just a bag of rice! This has enabled us to undertake a number of projects. For example, this building was going to be a home economics room.",
+"But for a cost of £8000 we replaced it with this building, which was then painted by the teachers and pupils. So far we have financed the repairs or complete rebuilding of 7 classroom blocks.",
+"Including the renovation of the Mount Carmel school in Sambang, the St.Mulumba's school in Basse, and at St.Patrick's, Darsalami.",
+"Here is one of the new classrooms in use, with the children being tought sewing using some craft material donated and shipped with Ed-Aid.",
+"It's not just classrooms that need to be in good condition for a good learning atmosphere, things like working toilets are desperately needed by schoolsin the Gambia. So Ed-Aid help by replacing toilets in a state of total disrepair with new toilets.",
+"With new toilets like this, so every child has access to the right sanitary infrastructue for a full day at school.",
+"Ed-Aid(Africa) helps to Rebuild derelict Teachers' Quarters. Teachers rarely teach in their own area. They do not have cars and away from the towns there is very little transport. It is difficult for them to find lodging nearby. So, where possible, the Mission provides accommodation for the staff in the school compound. Many of these buildings are in need of repair or replacement. This was St. Patrick's, in Darsalami, one of the many teacher's quearters in need of repair!",
+"Here is the almost completed rebuild of the teacher's quarters sponsored by Ed-Aid."]
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+  document.getElementById("3").innerHTML= text[slideIndex-1];
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
+</body>
+</html>

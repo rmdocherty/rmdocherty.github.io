@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<title> Ed-Aid</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
+<link rel="stylesheet" type="text/css" href="GalleryCSS.css">
+<link rel="stylesheet" type="text/css" href="move.css">
+<script src = "screenCheckGallery.js"></script>
+<html>
+<body>
+<div class = "projectTitles">
+	<h1>2011-2014 Projects</h1>
+</div>
+<div class ="dot8"><a href = "Ed-Aid.html">Home</a></div>
+<div class ="dot7"><a href = "Projects.html">Projects</a></div>
+<div class ="textbox"  id ="3">Sambang is a remote village, about 250 miles from the capital, 5 miles from the road along a dirt track. As the local village cannot provide suitable lodgings, teachers posted to this school have to live onsite so high quality living quarters are essential.
+</div>
+<div class="w3-content w3-display-container" onclick="plusDivs(1)">
+<p class = "p1">Tap for more</p>
+	<!--2011 project -->
+  <img class="mySlides" src="250sambtold.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250samnew.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250teachers.jpg" style="width:100%" "height = 100%">
+    <!--2012/13 project -->
+  <img class="mySlides" src="250gopen.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250bleshop.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250ginshop.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250soutside.jpg" style="width:100%" "height = 100%">
+    <!-- 2013 project -->
+  <img class="mySlides" src="150roofof.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250trusher.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250roffin.jpg" style="width:100%" "height = 100%">
+    <!-- 2014 project -->
+  <img class="mySlides" src="250georgtol.jpg" style="width:100%" "height = 100%">
+  <img class="mySlides" src="250kaimorof.jpg" style="width:100%" "height = 100%">
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+var text = ["Sambang is a remote village, about 250 miles from the capital, 5 miles from the road along a dirt track. As the local village cannot provide suitable lodgings, teachers posted to this school have to live onsite so high quality living quarters are essential. Pictured are the old Sambang Mount Carmel quarters, now demolished.",
+"The old teacher's quarters were in an appalling state and dangerous condition, the roof leaked, there were no toilets and no washing or cooking facilities; they deserved new quarters with good facilities. The Education Secretariat organised a complete rebuild, this was not an easy task as all the materials and workers had to be brought many miles to the site. Here is the newly completed teacher's quarters in 2011. ",
+"This project was financed by Ed-Aid(Africa) at a cost of £11,100 and was completed in early 2011, on time and within budget! Everyone is delighted with the new quarters, including the teachers here about to occupy the new quarters.",
+"Since the Catholic Education Secretariat control schools for some 25000 pupils, they wanted to be self-sufficient for their school stationery. The shop building project was financed jointly at a cost of 659000 Gambian Dalasis, (£14645) of which Ed-Aid(Africa) provided 408950 Dalasis (£9235). The building work was managed by the Secretariat(CES). It is on a prominent location next to St.Therese's school, Kanifing, close to the Banjul-Soma-Basse highway.",
+"The Secretariat funds the goods for sale to all, and typing, printing and copying facilities are also available. It also provides work experience for the senior pupils of St.Therese's. During Ed-Aid's 2013 visit, David and Fr.Phillip were invited to formally open and bless the shop!",
+"The overall objectives of the project were: To provide affordable, addessible and high quality teaching and learning materials to the local schools and to create a place for schools to print exam papers at an affordable price. Here is the shop ready for customers.",
+"The shop also creates employment opportunites for young Gambians, and helps develop skills and marketing strategies for them. The shop also generates income for the Education secretariat in Gambia. ",
+"Two schools at Basse, located at the Eastern end of the country at Basse, urgently needed some repairs. St.Mulumba's Upper Basic school concentrates on Agricultural subjects, having a large school garden and piggery. This block of classrooms needed a new roof as the termites had destroyed the roof beams.",
+"The new supports are welded metal so will last much longer. This work started in the summer 2013 and has now been completed. A second project at St.Joseph's Lower Basic school, Basse needs new pupil's toilets, and this work has just started now that Ed-Aid(Africa) has sent stage 2 of the funding to the Bishop's office for the Education Secretariat.",
+"Ed-Aid(Africa) was delighted to fund this completed project at £2160 which is pictured here with the fixed corrugate to finish off the new roof.",
+"Occasionaly, The Gambia suffers from severe storms with high winds which rip the corrugated iron roof from their rafters. Basse lost many roofs some years ago, but a similar storm struck the east of the country in late August 2014. This tore the roof from the nursery school at Jalokoto. This mission school is probably the most remote of all their schools, with just one classroom with one teacher.",
+"The village is some 275km from the capital, on the North bank, and the nearest town with medical facilities is some distance away at Bansang. To get there, one has to cross the river by rope ferry! Ed-Aid was able to meet an emergency request from the Mission and has sent £1000 to cover the repairs to this school. So far, Ed-Aid has sponsored 6 teachers' quarters complete with washrooms and toilets. With many other projects, we have sponsored about £135,000 of building work for Gambian Mission Education, but we need your donations as there are still more buildings awaiting repair!"
+]
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+  document.getElementById("3").innerHTML= text[slideIndex-1];
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
+</body>
+</html>

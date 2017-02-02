@@ -1,0 +1,54 @@
+@keyframes homePageCascade1{
+	from {top:28%}
+	to {top:32%}
+	from{left:20%}
+	to{left:20%}
+}
+@keyframes homePageCascade2{
+	from {top:36%}
+	to {top:45%}
+	from{left:20%}
+	to{left:20%}
+}
+@keyframes homePageCascade3{
+	from {top:49%}
+	to {top:58%}
+	from{left:20%}
+	to{left:20%}
+}
+@keyframes homePageCascade4{
+	from {top:62%}
+	to {top:71%}
+	from{left:20%}
+	to{left:20%}
+}
+@keyframes homePageCascade5{
+	from {top:35%}
+	to {top:44%}
+	from{left:20%}
+	to{left:20%}
+}
+@keyframes cascade1{
+	from {top:24%}
+	to {top:28%}
+	from{left:12%}
+	to{left:12%}
+}
+@keyframes homePageCascade6{
+	from {top:28%}
+	to {top:32%}
+	from{left:40%}
+	to{left:40%}
+}
+@keyframes projectsHome{
+	from {top:22%}
+	to {top:22%}
+	from{left:5%}
+	to{left:8%}
+}
+@keyframes projectsProjects{
+	from {top:22%}
+	to {top:22%}
+	from{left:40%}
+	to{left:47%}
+}
