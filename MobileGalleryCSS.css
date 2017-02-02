@@ -163,7 +163,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', end
 	left: 2%;
 	color:transparent;
 	font-family: Open Sans;
-	font-size: 7vmin;
+	font-size: 6vmin;
 	animation: homePageCascade5, fade;
 	animation-duration: 1.5s,1.5s;
 	animation-delay:1s,1s;
@@ -210,7 +210,7 @@ to{height:12%;}
 	left: 2%;
 	color:transparent;
 	font-family: Open Sans;
-	font-size: 7vmin;
+	font-size: 6vmin;
 	animation: homePageCascade3, fade;
 	animation-duration: 1.5s,1.5s;
 	animation-delay:1.2s,1.2s;
@@ -232,7 +232,7 @@ height:10%;
 	left: 2%;
 	color:transparent;
 	font-family: Open Sans;
-	font-size: 7vmin;
+	font-size: 6vmin;
 	animation: homePageCascade4, fade;
 	animation-duration: 1.5s,1.5s;
 	animation-delay:1.4s,1.4s;
