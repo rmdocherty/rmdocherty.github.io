@@ -13,5 +13,6 @@ loadCSS("Ed-Aid.css")
 document.styleSheets[2].disabled = true;
 document.styleSheets[(document.styleSheets.length -1)].disabled = true;
 loadCSS("Mobile Ed-Aid.css")
+loadCss("MobileMove.ccs")
 }
 
