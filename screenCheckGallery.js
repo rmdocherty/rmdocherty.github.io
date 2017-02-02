@@ -17,4 +17,8 @@ loadCSS("MobileGalleryCSS.css")
 loadCSS("MobileMove.css")
 loadCSS("MobileGalleryCSS.css")
 loadCSS("w3cssmobile.css")
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
