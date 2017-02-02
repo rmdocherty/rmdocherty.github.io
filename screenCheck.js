@@ -9,6 +9,7 @@ if ( screen.width > 500)
 {
 loadCSS("Ed-Aid.css")
 }else{
+console.log(3)
 document.styleSheets[2].disabled = true;
 document.styleSheets[(document.styleSheets.length -1)].disabled = true;
 loadCSS("Mobile Ed-Aid.css")
