@@ -7,8 +7,8 @@ function loadCSS(filename){
     }
 if ( screen.width > 500)
 {
-loadCSS("stylesheets/GalleryCSS.css")
-loadCSS("stylesheets/w3css.css")
+loadCSS("GalleryCSS.css")
+loadCSS("w3css.css")
 }else{
 	console.log(1)
 document.styleSheets[2].disabled = true;
