@@ -275,7 +275,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', end
 .textbox{
 	position: absolute;
 	margin-left: 3%;
-	top: 75%;
+	top: 85%;
 	font-family: Open Sans;
 	font-size: 4vmin;
 	animation: fade;
