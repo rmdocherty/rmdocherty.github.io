@@ -7,10 +7,10 @@ function loadCSS(filename){
     }
 if ( screen.width > 500)
 {
-loadCSS("stylesheets/Ed-Aid.css")
+loadCSS("Ed-Aid.css")
 }else{
 	console.log(1)
 document.styleSheets[2].disabled = true;
 document.styleSheets[(document.styleSheets.length -1)].disabled = true;
-loadCSS("stylesheets/Mobile Ed-Aid.css")
-loadCSS("stylesheets/MobileMove.css")}
+loadCSS("Mobile Ed-Aid.css")
+loadCSS("MobileMove.css")}
