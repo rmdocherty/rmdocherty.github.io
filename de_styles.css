@@ -1,0 +1,216 @@
+:root {
+    --text_size: 2.4vw;
+    --max_hero_w: 795px;
+    --max_hero_h: 851px;
+    --dark_pink: #e11a86;
+    --light_pink: #e656b4;
+    --light_grey: #a493e0;
+    --light_blue: #7f6fdf;
+    --bg: #020016
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.8em;
+    color: white;
+    background-color: var(--bg);
+    margin: 0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px black;
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: var(--max_hero_w);
+    text-align: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.fold {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fold.two {
+    /*max-width: var(--max_hero_w); */
+    width: 100%;
+    background-color: var(--dark_pink);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: var(--max_hero_w);
+    height: 1200px;
+}
+
+.schedulediv {
+    width: 100%;
+    display: block;
+}
+
+.linediv {
+    width: 3px;
+    background-color: darkslategray;
+    height: 600px;
+    position: relative;
+    left: 30%;
+    box-shadow: 1px 1px black;
+}
+
+.fold.three {
+    /*max-width: var(--max_hero_w); */
+    width: 100%;
+    background-color: var(--light_blue);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max_hero_w);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.hero-image {
+    max-width: var(--max_hero_w);
+    max-height: var(--max_hero_h);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-image.left-div {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    width: fit-content;
+
+    color: var(--dark_pink);
+    font-size: var(--text_size);
+    text-align: left;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+    background-color: var(--dark_pink);
+    border-color: var(--dark_pink);
+    color: white;
+    border: 1px solid transparent;
+    height: 60px;
+    font-size: 1em;
+    padding-top: 3px;
+    font-weight: bold;
+    margin-right: 7.5px;
+    box-shadow: 2px 3px var(--bg);
+}
+
+.btn.downarrow {
+    height: 7rem;
+    width: 7rem;
+    background: rgba(0, 0, 0, 0.0);
+    background-repeat: no-repeat;
+    background-size: 7rem 7rem;
+    background-image: url("assets/down_arrow.png");
+    box-shadow: none;
+
+}
+
+.btn.e {
+    width: 60px;
+    background-color: orangered;
+    border-color: orangered;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-image: url("assets/e.png");
+}
+
+.btn.slack {
+    width: 60px;
+    background-color: white;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-image: url("assets/slack.png");
+}
+
+
+.full-div {
+    width: 100%;
+    height: 100%;
+}
+
+.sponsor-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    height: 200px;
+    border-radius: 2rem;
+    background-color: white;
+    border-color: white;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 5px 6px var(--bg);
+    cursor: pointer;
+}
+
+.sponsor-img {
+    max-height: 140px;
+    max-width: 300px;
+    padding-left: 7%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sponsor-text {
+    color: var(--bg);
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+/* FONTS */
+.suse-med {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}

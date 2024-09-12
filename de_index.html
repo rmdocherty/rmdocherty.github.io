@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/favicon_2.png">
+    <link rel="stylesheet" href="de_styles.css">
+    <title>DE10 Hack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="fold">
+        <div class="hero-image">
+            <img class="full-div" src="assets/hero.png" id="hero">
+            </img>
+            <div class="hero-image left-div">
+                <h2 style="text-align: center;">September 21st</h2>
+                <h2 style="text-align: center;">10:00-19:00</h2>
+                <h2 style="text-align: center;">Imperial College London</h2>
+                <div style="display: flex; justify-content: center;">
+                    <button onclick="open_link('https://www.eventbrite.co.uk/e/de10-hackathon-tickets-1000240976687')"
+                        class="btn e"></button>
+                    <button onclick="open_link('https://de10-hack.devpost.com/')" class="btn"
+                        style="padding-top: 2%;">DevPost</button>
+                    <button
+                        onclick="open_link('https://join.slack.com/t/de10-hackathon/shared_invite/zt-2pfl167ef-unmzRKP~a_B6TEnrzltRaw')"
+                        class="btn slack" style="background-color: white; border-color: white;"></button>
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 15%;">
+                    <button onclick="scroll_down()" class="btn downarrow"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="fold two">
+        <h2 style="text-align: center;">10th Anniversary Hackathon!</h2>
+        <span style="text-align: center;">
+            We're super excited to have you at the DE10 Hackathon - a part of our 10th-anniversary celebrations on
+            September 21st at the <b>Great Hall, Imperial College London</b>.
+            This isn't just a day of innovation—it's a full experience filled with exciting activities, delicious food,
+            and fantastic prizes!
+        </span>
+        <h2 style="text-align: center;">Schedule (21/9/24):</h2>
+        <div id="schedule-div" class="schedulediv">
+            <div class="linediv"></div>
+        </div>
+    </div>
+    <div class="fold three">
+        <h2 style="text-align: center;">Sponsors</h2>
+        <div class="sponsor-card" onclick="open_link('https://royalcommission1851.org/')">
+            <img class="sponsor-img" src="assets/comission.jpg"></img>
+            <span class="sponsor-text">Royal Commision for the Exhibition</span>
+        </div>
+        <div class="sponsor-card" onclick="open_link('https://www.halma.com/')">
+            <img class=" sponsor-img" src="assets/halma.svg"></img>
+            <span class=" sponsor-text">Halma PLC</span>
+        </div>
+        <div class="sponsor-card" onclick="open_link('https://www.kaikaku.ai/' )">
+            <img class=" sponsor-img" src="assets/kaikau.png"></img>
+            <span class="sponsor-text">KAIKAKU</span>
+        </div>
+        <div class="sponsor-card" onclick="open_link('https://www.pg.co.uk/')">
+            <img class="sponsor-img" src="assets/png.png"></img>
+            <span class="sponsor-text">Proctor and Gamble</span>
+        </div>
+        <div class="sponsor-card" onclick="open_link('https://www.chkn.media/')">
+            <img class="sponsor-img" src="assets/chkn.png"></img>
+            <span class="sponsor-text">CHKN MEDIA</span>
+        </div>
+        <div class="sponsor-card" onclick="open_link('https://www.imperial.ac.uk/')">
+            <img class="sponsor-img" src="assets/icl_favi.png"></img>
+            <span class="sponsor-text">Imperial College London</span>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        const events = [
+            { "time": "10:00", "type": "admin", "desc": "Registration and breakfast" },
+            { "time": "10:30", "type": "hack", "desc": "Event opening and hackathon formation" },
+            { "time": "12:30", "type": "food", "desc": "Lunch break" },
+            { "time": "14:00", "type": "hack", "desc": "Hack session until submission" },
+            { "time": "17:30", "type": "admin", "desc": "Project presentations and judging" },
+            { "time": "18:30", "type": "hack", "desc": "Awards ceremony and closing remarks" },
+            { "time": "19:00-", "type": "food", "desc": "Dinner and social activities" },
+        ]
+
+        const ROOT = document.querySelector(':root');
+
+        let VW = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        let VH = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+        const heroImg = document.getElementById("hero")
+
+
+        addEventListener("resize", (event) => { });
+
+        onresize = (event) => {
+            VW = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+            VH = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+            resize_text(VW, VH)
+        };
+
+        resize_text = (vw, vh) => {
+            const rs = getComputedStyle(ROOT)
+            const iw = heroImg.offsetWidth
+
+            const new_text_val = 0.03 * iw
+            const new_text_str = new_text_val.toFixed(2) + "px"
+            ROOT.style.setProperty('--text_size', new_text_str)
+            console.log(new_text_val, new_text_str)
+        }
+
+        open_link = (href) => { window.open(href, "_blank") }
+        scroll_down = () => {
+            const ih = heroImg.offsetHeight
+            window.scrollTo(0, ih);
+        }
+
+        resize_text(VW, VH)
+
+        get_dot = (type) => {
+            const dot = document.createElement('div')
+            dot.style.backgroundColor = "#a493e0"
+            dot.style.height = '20px'
+            dot.style.width = '20px'
+            dot.style.marginTop = '5px'
+            dot.style.borderRadius = '10em'
+            dot.style.border = '2px #a493e0'
+            dot.style.boxShadow = '2px 3px black'
+            /*
+            dot.style.position = 'relative'
+            dot.style.left = '28.9%'
+            */
+            return dot
+        }
+
+        get_schedule_entry = (i, n, entry) => {
+            const new_div = document.createElement("div")
+            new_div.style.display = "flex"
+
+
+            const time = document.createElement("span")
+            time.innerHTML = entry["time"]
+            time.style.width = '40px'
+            new_div.appendChild(time)
+
+            const dot = get_dot(entry["type"])
+            new_div.appendChild(dot)
+
+            const desc = document.createElement("span")
+            desc.innerHTML = entry["desc"]
+            desc.style.width = '400px'
+            desc.style.textAlign = 'left'
+            desc.style.height = '80px'
+            new_div.appendChild(desc)
+
+            new_div.style.position = 'relative'
+            new_div.style.top = -(((i + 0.5) * 80) + (600 * (i / n))).toFixed(1) + 'px'
+            new_div.style.left = '8.9%'
+
+            return new_div
+        }
+
+        add_events = (e) => {
+            const parent = document.getElementById("schedule-div")
+            const h = parent.offsetHeight
+            const n_events = e.length
+            e.reverse()
+            for (let i = 0; i <= n_events; i++) {
+                const current_event = e[i]
+                const entry = get_schedule_entry(i, n_events, current_event)
+                parent.appendChild(entry)
+            }
+        }
+
+        remove_events = () => {
+            const parent = document.getElementById("schedule-div")
+            parent.innerHTML = ""
+        }
+
+        add_events(events)
+
+    </script>
+</body>
+
+</html>
