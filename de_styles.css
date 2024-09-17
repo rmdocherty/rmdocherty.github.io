@@ -180,7 +180,7 @@ span {
     margin-bottom: auto;
 }
 
-.s-text {
+.card-text {
     color: var(--bg);
     margin: auto;
     text-align: center;
