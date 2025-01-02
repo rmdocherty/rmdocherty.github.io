@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: #fffffc;
   font-size: 1.8em;
 }
 
@@ -105,3 +106,27 @@ h1 {
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1818;
+  }
+
+  .fakeBody {
+    color: #e8dcdc;
+  }
+
+  a {
+    color: #6172c9;
+  }
+
+  a:visited {
+    color: #af7acc;
+  }
+  .cardDiv:hover {
+    outline: 2px darkslategrey solid;
+  }
+
+  .cardDiv:hover {
+    outline: 2px white solid;
+  }
+}
