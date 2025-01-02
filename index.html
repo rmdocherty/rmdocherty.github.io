@@ -7,28 +7,31 @@
 </head>
 
 <body>
-    <div><a href="https://github.com/rmdocherty">Github</a> <a href="#projects">Projects</a> <a
-            href="#publications">Publications</a>
-        <a href="#skills">CV</a>
-    </div>
-
-
-
     <div class="fakeBody">
-        <h1>Ronan Docherty</h1>
+        <h1 id="title">Ronan Docherty</h1>
+        <div class="horizontalCentredFlex">
+            <a href="https://github.com/rmdocherty">Github</a> 
+            <a href="#projects">Projects</a> 
+            <a href="#publications">Publications</a>
+            <a href="#skills">CV</a>
+        </div>
+
+
         <h3>About:</h3>
         <p class="frontPageText">
             I'm a graduate from Imperial College London with a Master's degree in Physics who is
             currently doing a PhD in machine learning for materials science with the <a
                 href="https://tldr-group.github.io/#/">TLDR group</a>
-            at Imperial.
+            at Imperial. I also work part-time at <a href="https://www.polaron.ai/">Polaron</a>, a materials analysis & design startup. 
             I enjoy puzzles, programming and making kitsch webapps.
         </p>
 
-        <h3>Personal Projects:</h3>
-        <div class="flexDiv" id="projects">
+        <h3 id="projects">Personal Projects:</h3>
+        <!--TODO: add Orvball (web), make set width & height, only play gifs on hover-->
+        <div class="flexDiv" >
             <div class="cardDiv">
-                <img src="images/avalog.gif" width="250" height="180">
+                <img class="preview" src="images/avalog_preview.png" width="250" height="180">
+                <img class="overlay" src="images/avalog_optimized.gif" width="250" height="180">
                 <div class="cardText">
                     <b>Avalog:</b> an analog (pieces move continuously) chess game, featuring draft mode and online
                     multiplayer. Written in Godot,
@@ -44,7 +47,7 @@
                 </div>
             </div>
             <div class="cardDiv">
-                <img src="images/hyperchess_smaller.png" width="250" height="400">
+                <img src="images/hyperchess_smaller.png" width="250" height="180">
                 <div class="cardText">
                     <b>Hyperchess:</b> a web platform to create and play on non-Euclidean chessboards either
                     over-the-board
@@ -58,7 +61,8 @@
                 </div>
             </div>
             <div class="cardDiv">
-                <img src="images/bucket_optimized.gif" width="250" height="400">
+                <img class="preview" src="images/bucket_optimized.png" width="250" height="400">
+                <img class="overlay" src="images/bucket_optimized.gif" width="250" height="400">
                 <div class="cardText">
                     <b>Bucket:</b> a webapp that allows the user to create and fill a 'paint-by-numbers' from an
                     uploaded
@@ -94,6 +98,7 @@
 
 
         <h3>Academic Projects:</h3>
+        <!--TODO: add ImageRep, make set width & height, only play gifs on hover-->
         <div class="flexDiv">
             <div class="cardDiv">
                 <img src="images/samba.gif" width="250" height="180">
@@ -136,7 +141,7 @@
         <h3 id="publications">Publications and preprints:</h3>
         <ul>
             <li>A. Dahari, R. Docherty, S. Kench, S. J. Cooper, <a href="https://arxiv.org/abs/2410.19568">'Prediction of microstructural representativity from a single image'</a>, <i>arXiV preprint</i>, 2024 </li>
-            <li>R. Docherty, A. Vamvakeros, S. J. Cooper, <a href="https://arxiv.org/abs/2410.19836">'Upsampling DINOv2 features for unsupervised vision tasks and weakly supervised materials segmentation'</a>, <i>Neurips AI4Mat</i>, 2024</li>
+            <li>R. Docherty, A. Vamvakeros, S. J. Cooper, <a href="https://openreview.net/forum?id=0ITfQrkv7y">'Upsampling DINOv2 features for unsupervised vision tasks and weakly supervised materials segmentation'</a>, <i>NeurIPS, AI4Mat Workshop</i>, 2024</li>
             <li>G. Lei†, R. Docherty†, S. J. Cooper, <a href="https://pubs.rsc.org/en/content/articlelanding/2024/dd/d4dd00074a">'Materials science in the era of large language models: a perspective'</a>, <i>RSC Digital Discovery</i>, 2024</li>
             <li>R. Docherty, I. Squires, A. Vamvakeros, S. J. Cooper, <a href="https://joss.theoj.org/papers/10.21105/joss.06159">'SAMBA: A Trainable Segmentation Web-App with Smart Labelling'</a>, <i>JOSS</i>, 2024</li>
             <li>M. D. Ward†, R. Docherty†, L. Minion, X. Shi, K. Anson, G. Siligardi, J. Nelson, J. Wade, M. J. Fuchter, <a href="https://pubs.rsc.org/en/content/articlelanding/2024/nr/d4nr01651c">'Development of low-cost, compact chiroptical imaging systems'</a>, <i>RSC Nanoscale</i>, 2024</li>
@@ -147,7 +152,7 @@
             <li>Python, mostly for scientific computing (numpy, scipy, Pandas).</li>
             <li>Machine Learning & Computer Vision: PyTorch, scikit-image, CNNs/transformers/random forests.</li>
             <li>Web dev: Javascript, Typescript, React, some VueJS.</li>
-            <li>Some low-level experience, including C, C++, FORTH, Assembly.</li>
+            <li>Some lower-level experience, including C, FORTH, Assembly.</li>
             <li>Physics and materials-science background with some lab work.</li>
         </ul>
 
@@ -163,12 +168,10 @@
             <li> National Citizenship Service Award </li>
         </ul>
 
+    
 
-
-
-
+        <div  class="centeredContainer"><a href="#title">Top</a></div>
     </div>
-
 
 
 </body>

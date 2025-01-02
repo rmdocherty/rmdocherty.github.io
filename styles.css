@@ -17,6 +17,13 @@ h1 {
   padding: 0 10px;
 }
 
+.horizontalCentredFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4%;
+}
+
 .frontPageText {
   width: 100%
 }
@@ -49,6 +56,11 @@ h1 {
   flex-basis: 600px;
   flex-grow: 1;
   flex-shrink: 1;
+  max-height: 500px;
+  padding: 10px;
+  height: 400px;
+  outline: 2px lightgrey solid;
+  border-radius: 10px;
 }
 
 .cardText {
@@ -57,3 +69,34 @@ h1 {
   text-align: left;
   max-width: 100%;
 }
+
+.overlay {
+  display: none;
+}
+
+.preview {
+  display: block;
+}
+
+.cardDiv:hover {
+  outline: 2px grey solid;
+}
+
+.cardDiv:hover > .overlay{
+  display: block;
+}
+
+
+.cardDiv:hover > .preview{
+  display: none;
+}
+
+.cardDiv:active > .overlay{
+  display: block;
+}
+
+
+.cardDiv:active > .preview{
+  display: none;
+}
+
