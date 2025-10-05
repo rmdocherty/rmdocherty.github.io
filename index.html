@@ -1,215 +1,377 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
     <title>Ronan Docherty</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="fakeBody">
-        <h1 id="title">Ronan Docherty</h1>
-        <div class="horizontalCentredFlex">
-            <a href="https://github.com/rmdocherty">Github</a> 
-            <a href="#projects">Projects</a> 
-            <a href="#publications">Publications</a>
-            <a href="#skills">CV</a>
+      <h1 id="title">Ronan Docherty</h1>
+      <div class="horizontalCentredFlex">
+        <a href="https://github.com/rmdocherty">Github</a>
+        <!-- <a href="blog/blog_main.html">Blog</a> -->
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">CV</a>
+      </div>
+
+      <h3>About:</h3>
+      <p class="frontPageText">
+        I'm a graduate from Imperial College London with a Master's degree in
+        Physics who is currently doing a PhD in machine learning for materials
+        science with the
+        <a href="https://tldr-group.github.io/#/">TLDR group</a> at Imperial. I
+        also work part-time at <a href="https://www.polaron.ai/">Polaron</a>, a
+        materials analysis & design startup. I enjoy puzzles, programming and
+        making kitsch webapps.
+      </p>
+
+      <h3 id="projects">Personal Projects:</h3>
+      <!--TODO: add Orvball (web), make set width & height, only play gifs on hover-->
+      <div class="flexDiv">
+        <div class="cardDiv">
+          <img
+            class="preview"
+            src="images/orcball.png"
+            width="250"
+            height="340"
+          />
+          <img
+            class="overlay"
+            src="images/orcball.gif"
+            width="250"
+            height="340"
+          />
+          <div class="cardText">
+            <b>Orcball (web):</b> paper football with powerups, with P2P
+            multiplayer. Written with Phaser + Typescript for the GameDev.js
+            jam.
+            <div class="centeredContainer">
+              &nbsp&nbsp
+              <a
+                href="https://avaloggames.itch.io/orcball"
+                style="text-align: center"
+                >Itch</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/rmdocherty/Avalog_"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
         </div>
 
-
-        <h3>About:</h3>
-        <p class="frontPageText">
-            I'm a graduate from Imperial College London with a Master's degree in Physics who is
-            currently doing a PhD in machine learning for materials science with the <a
-                href="https://tldr-group.github.io/#/">TLDR group</a>
-            at Imperial. I also work part-time at <a href="https://www.polaron.ai/">Polaron</a>, a materials analysis & design startup. 
-            I enjoy puzzles, programming and making kitsch webapps.
-        </p>
-
-        <h3 id="projects">Personal Projects:</h3>
-        <!--TODO: add Orvball (web), make set width & height, only play gifs on hover-->
-        <div class="flexDiv" >
-            <div class="cardDiv">
-                <img class="preview" src="images/orcball.png" width="250" height="340">
-                <img class="overlay" src="images/orcball.gif" width="250" height="340">
-                <div class="cardText">
-                    <b>Orcball (web):</b> paper football with powerups, with P2P multiplayer. Written with Phaser + Typescript for the GameDev.js jam.
-                    <div class="centeredContainer">
-                        &nbsp&nbsp
-                        <a href="https://avaloggames.itch.io/orcball" style="text-align: center;">Itch</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/rmdocherty/Avalog_" style="text-align: center;">Github</a>
-                    </div>
-                </div>
+        <div class="cardDiv">
+          <img
+            class="preview"
+            src="images/avalog_preview.png"
+            width="250"
+            height="180"
+          />
+          <img
+            class="overlay"
+            src="images/avalog_optimized.gif"
+            width="250"
+            height="180"
+          />
+          <div class="cardText">
+            <b>Avalog:</b> an analog (pieces move continuously) chess game,
+            featuring draft mode and online multiplayer. Written in Godot,
+            available on Steam.
+            <div class="centeredContainer">
+              <a
+                href="https://store.steampowered.com/app/2480820/Avalog/"
+                style="text-align: center"
+                >Steam</a
+              >
+              &nbsp&nbsp
+              <a href="https://avaloggames.itch.io/" style="text-align: center"
+                >Itch</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/rmdocherty/Avalog_"
+                style="text-align: center"
+                >Github</a
+              >
             </div>
-
-            <div class="cardDiv">
-                <img class="preview" src="images/avalog_preview.png" width="250" height="180">
-                <img class="overlay" src="images/avalog_optimized.gif" width="250" height="180">
-                <div class="cardText">
-                    <b>Avalog:</b> an analog (pieces move continuously) chess game, featuring draft mode and online
-                    multiplayer. Written in Godot,
-                    available on Steam.
-                    <div class="centeredContainer">
-                        <a href="https://store.steampowered.com/app/2480820/Avalog/"
-                            style="text-align: center;">Steam</a>
-                        &nbsp&nbsp
-                        <a href="https://avaloggames.itch.io/" style="text-align: center;">Itch</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/rmdocherty/Avalog_" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardDiv">
-                <img src="images/hyperchess_smaller.png" width="250" height="180">
-                <div class="cardText">
-                    <b>Hyperchess:</b> a webapp to create & play on non-Euclidean chessboards either
-                    OTB
-                    or via P2P connection.
-                    Written in Typescript.
-                    <div class="centeredContainer">
-                        <a href="https://hype-chess.web.app/" style="text-align: center;">Website</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/rmdocherty/hyper-chess" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardDiv">
-                <img class="preview" src="images/bucket_optimized.png" width="250" height="340">
-                <img class="overlay" src="images/bucket_optimized.gif" width="250" height="340">
-                <div class="cardText">
-                    <b>Bucket:</b> a webapp that allows the user to create and fill a 'paint-by-numbers' from an
-                    uploaded
-                    image.
-                    Vanilla JS/HTML/CSS, with GCP function for the conversion.
-                    <div class="centeredContainer">
-                        <a href="https://bucket-12.web.app/" style="text-align: center;">Website</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/rmdocherty/buck3t" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardDiv">
-                <img src="images/csslide.png" width="250" height="180">
-                <div class="cardText">
-                    <b>CSSlide:</b> a slideshow editor using arbritrary transitions of HTML elements between different
-                    CSS
-                    states.
-                    Winner of the IC Hack 2020 best educational hack; written in Vue.js.
-                    <div class="centeredContainer">
-                        <a href="https://csslides.netlify.app/" style="text-align: center;">Website</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/jdranczewski/ic-hack-2020" style="text-align: center;">Github</a>
-                        &nbsp&nbsp
-                        <a href="https://youtu.be/nMNW8fdlKCw?t=288" style="text-align: center;">Video</a>
-
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-
-
-
-        <h3>Academic Projects:</h3>
-        <!--TODO: add ImageRep, make set width & height, only play gifs on hover-->
-        <div class="flexDiv">
-            <div class="cardDiv">
-                <img class="preview" src="images/imagerep.png" width="250" height="180">
-                <img class="overlay" src="images/imagerep.gif" width="250" height="180">
-                <div class="cardText">
-                    <b>ImageRep:</b> uses structure of micrograph to give confidence bounds on measured volume fraction. Flask backend + React TSX frontend.
-                    <div class="centeredContainer">
-                        <a href="https://www.imagerep.io/" style="text-align: center;">Website</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/tldr-group/ImageRep" style="text-align: center;">Github</a>
-                    </div>
-                </div>
+        <div class="cardDiv">
+          <img src="images/hyperchess_smaller.png" width="250" height="180" />
+          <div class="cardText">
+            <b>Hyperchess:</b> a webapp to create & play on non-Euclidean
+            chessboards either OTB or via P2P connection. Written in Typescript.
+            <div class="centeredContainer">
+              <a href="https://hype-chess.web.app/" style="text-align: center"
+                >Website</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/rmdocherty/hyper-chess"
+                style="text-align: center"
+                >Github</a
+              >
             </div>
-            <div class="cardDiv">
-                <img class="preview" src="images/samba.png" width="250" height="180">
-                <img class="overlay" src="images/samba.gif" width="250" height="180">
-                <div class="cardText">
-                    <b>SAMBA:</b> a trainable segmentation web-app for materials science phase segmentation. Uses Meta's SAM for labelling suggestions and a random forest backend
-                    for the segmentation.
-                    <div class="centeredContainer">
-                        <a href="https://www.sambasegment.com/" style="text-align: center;">Website</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/tldr-group/samba-web" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardDiv">
-                <img src="images/pyqc.png" width="250" height="180">
-                <div class="cardText">
-                    <b>pyramaterised:</b> a Python library for creating and measuring Parameterised Quantum Circuits
-                    for near-term quantum computing applications.
-                    <div class="centeredContainer">
-                        <a href="https://pypi.org/project/pyramaterised/" style="text-align: center;">PyPI</a>
-                        &nbsp&nbsp
-                        <a href="https://github.com/rmdocherty/pyramaterised" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardDiv">
-                <img class="preview" src="images/cpl.png" width="250" height="180">
-                <img class="overlay" src="images/cpl.gif" width="250" height="180">
-                <div class="cardText">
-                    <b>ChiraSnap:</b> a cheap, compact circularly polarised imaging system. Contains code and instructions
-                    for building the physical camera (including .stl files for the casing).
-                    <div class="centeredContainer">
-                        <a href="https://github.com/rmdocherty/CPL-Imager" style="text-align: center;">Github</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="cardDiv">
+          <img
+            class="preview"
+            src="images/bucket_optimized.png"
+            width="250"
+            height="340"
+          />
+          <img
+            class="overlay"
+            src="images/bucket_optimized.gif"
+            width="250"
+            height="340"
+          />
+          <div class="cardText">
+            <b>Bucket:</b> a webapp that allows the user to create and fill a
+            'paint-by-numbers' from an uploaded image. Vanilla JS/HTML/CSS, with
+            GCP function for the conversion.
+            <div class="centeredContainer">
+              <a href="https://bucket-12.web.app/" style="text-align: center"
+                >Website</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/rmdocherty/buck3t"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cardDiv">
+          <img src="images/csslide.png" width="250" height="180" />
+          <div class="cardText">
+            <b>CSSlide:</b> a slideshow editor using arbritrary transitions of
+            HTML elements between different CSS states. Winner of the IC Hack
+            2020 best educational hack; written in Vue.js.
+            <div class="centeredContainer">
+              <a href="https://csslides.netlify.app/" style="text-align: center"
+                >Website</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/jdranczewski/ic-hack-2020"
+                style="text-align: center"
+                >Github</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://youtu.be/nMNW8fdlKCw?t=288"
+                style="text-align: center"
+                >Video</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <h3 id="publications">Publications and preprints:</h3>
-        <ul>
-            <li>A. Dahari, R. Docherty, S. Kench, S. J. Cooper, <a href="https://arxiv.org/abs/2410.19568">'Prediction of microstructural representativity from a single image'</a>, <i>arXiV preprint</i>, 2024 </li>
-            <li>R. Docherty, A. Vamvakeros, S. J. Cooper, <a href="https://openreview.net/forum?id=0ITfQrkv7y">'Upsampling DINOv2 features for unsupervised vision tasks and weakly supervised materials segmentation'</a>, <i>NeurIPS, AI4Mat Workshop</i>, 2024</li>
-            <li>G. Lei†, R. Docherty†, S. J. Cooper, <a href="https://pubs.rsc.org/en/content/articlelanding/2024/dd/d4dd00074a">'Materials science in the era of large language models: a perspective'</a>, <i>RSC Digital Discovery</i>, 2024</li>
-            <li>R. Docherty, I. Squires, A. Vamvakeros, S. J. Cooper, <a href="https://joss.theoj.org/papers/10.21105/joss.06159">'SAMBA: A Trainable Segmentation Web-App with Smart Labelling'</a>, <i>JOSS</i>, 2024</li>
-            <li>M. D. Ward†, R. Docherty†, L. Minion, X. Shi, K. Anson, G. Siligardi, J. Nelson, J. Wade, M. J. Fuchter, <a href="https://pubs.rsc.org/en/content/articlelanding/2024/nr/d4nr01651c">'Development of low-cost, compact chiroptical imaging systems'</a>, <i>RSC Nanoscale</i>, 2024</li>
-        </ul>
+      <h3>Academic Projects:</h3>
+      <!--TODO: add ImageRep, make set width & height, only play gifs on hover-->
+      <div class="flexDiv">
+        <div class="cardDiv">
+          <img
+            class="preview"
+            src="images/imagerep.png"
+            width="250"
+            height="180"
+          />
+          <img
+            class="overlay"
+            src="images/imagerep.gif"
+            width="250"
+            height="180"
+          />
+          <div class="cardText">
+            <b>ImageRep:</b> uses structure of micrograph to give confidence
+            bounds on measured volume fraction. Flask backend + React TSX
+            frontend.
+            <div class="centeredContainer">
+              <a href="https://www.imagerep.io/" style="text-align: center"
+                >Website</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/tldr-group/ImageRep"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cardDiv">
+          <img
+            class="preview"
+            src="images/samba.png"
+            width="250"
+            height="180"
+          />
+          <img
+            class="overlay"
+            src="images/samba.gif"
+            width="250"
+            height="180"
+          />
+          <div class="cardText">
+            <b>SAMBA:</b> a trainable segmentation web-app for materials science
+            phase segmentation. Uses Meta's SAM for labelling suggestions and a
+            random forest backend for the segmentation.
+            <div class="centeredContainer">
+              <a href="https://www.sambasegment.com/" style="text-align: center"
+                >Website</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/tldr-group/samba-web"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cardDiv">
+          <img src="images/pyqc.png" width="250" height="180" />
+          <div class="cardText">
+            <b>pyramaterised:</b> a Python library for creating and measuring
+            Parameterised Quantum Circuits for near-term quantum computing
+            applications.
+            <div class="centeredContainer">
+              <a
+                href="https://pypi.org/project/pyramaterised/"
+                style="text-align: center"
+                >PyPI</a
+              >
+              &nbsp&nbsp
+              <a
+                href="https://github.com/rmdocherty/pyramaterised"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cardDiv">
+          <img class="preview" src="images/cpl.png" width="250" height="180" />
+          <img class="overlay" src="images/cpl.gif" width="250" height="180" />
+          <div class="cardText">
+            <b>ChiraSnap:</b> a cheap, compact circularly polarised imaging
+            system. Contains code and instructions for building the physical
+            camera (including .stl files for the casing).
+            <div class="centeredContainer">
+              <a
+                href="https://github.com/rmdocherty/CPL-Imager"
+                style="text-align: center"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <h3 id="skills">Skills:</h3>
-        <ul>
-            <li>Python
-                <ul>
-                    <li>Libraries: numpy, scipy, scikit-learn, pandas, flask, <i>etc.</i> </li>
-                    <li>Tooling: ruff, black, mypy</li>
-                    <li>(Automated) CI/CD</li>
-                </ul>
+      <h3 id="publications">Publications and preprints:</h3>
+      <ul>
+        <li>
+          A. Dahari, R. Docherty, S. Kench, S. J. Cooper,
+          <a href="https://arxiv.org/abs/2410.19568"
+            >'Prediction of microstructural representativity from a single
+            image'</a
+          >, <i>arXiV preprint</i>, 2024
+        </li>
+        <li>
+          R. Docherty, A. Vamvakeros, S. J. Cooper,
+          <a href="https://openreview.net/forum?id=0ITfQrkv7y"
+            >'Upsampling DINOv2 features for unsupervised vision tasks and
+            weakly supervised materials segmentation'</a
+          >, <i>NeurIPS, AI4Mat Workshop</i>, 2024
+        </li>
+        <li>
+          G. Lei†, R. Docherty†, S. J. Cooper,
+          <a
+            href="https://pubs.rsc.org/en/content/articlelanding/2024/dd/d4dd00074a"
+            >'Materials science in the era of large language models: a
+            perspective'</a
+          >, <i>RSC Digital Discovery</i>, 2024
+        </li>
+        <li>
+          R. Docherty, I. Squires, A. Vamvakeros, S. J. Cooper,
+          <a href="https://joss.theoj.org/papers/10.21105/joss.06159"
+            >'SAMBA: A Trainable Segmentation Web-App with Smart Labelling'</a
+          >, <i>JOSS</i>, 2024
+        </li>
+        <li>
+          M. D. Ward†, R. Docherty†, L. Minion, X. Shi, K. Anson, G. Siligardi,
+          J. Nelson, J. Wade, M. J. Fuchter,
+          <a
+            href="https://pubs.rsc.org/en/content/articlelanding/2024/nr/d4nr01651c"
+            >'Development of low-cost, compact chiroptical imaging systems'</a
+          >, <i>RSC Nanoscale</i>, 2024
+        </li>
+      </ul>
+
+      <h3 id="skills">Skills:</h3>
+      <ul>
+        <li>
+          Python
+          <ul>
+            <li>
+              Libraries: numpy, scipy, scikit-learn, pandas, flask, <i>etc.</i>
             </li>
-            <li>Machine learning: random forests, PyTorch, CNNs, vision transformers, (L)LMs</li>
-            <li>Computer vision: scikit-image, kornia, feature extraction</li>
-            <li>Game dev: Godot, Phaser.js</li>
-            <li>Web dev: Javascript, Typescript, React (JSX, TSX), some VueJS</li>
-            <li>Some lower-level experience, including C, FORTH, Assembly</li>
-            <li>Physics and materials-science background, with some lab experience</li>
-            <li>Master's student supervision; marking</li>
-        </ul>
+            <li>Tooling: ruff, black, mypy</li>
+            <li>(Automated) CI/CD</li>
+          </ul>
+        </li>
+        <li>
+          Machine learning: random forests, PyTorch, CNNs, vision transformers,
+          (L)LMs
+        </li>
+        <li>Computer vision: scikit-image, kornia, feature extraction</li>
+        <li>Game dev: Godot, Phaser.js</li>
+        <li>Web dev: Javascript, Typescript, React (JSX, TSX), some VueJS</li>
+        <li>Some lower-level experience, including C, FORTH, Assembly</li>
+        <li>
+          Physics and materials-science background, with some lab experience
+        </li>
+        <li>Master's student supervision; marking</li>
+      </ul>
 
-        <h3>Achievements:</h3>
-        <ul>
-            <li>Polaron wins the <a href="https://www.gov.uk/government/news/british-start-up-wins-1-million-ai-prize-for-breakthrough-slashing-materials-development-from-years-to-days">Government's £1M AI prize</a></li>
-            <li> Winner <a href="https://www.youtube.com/watch?v=nMNW8fdlKCw&t=345s">(Best educational hack) IC Hack
-                    2020</a>; Runner up at Oxford Hack 2019</li>
-            <li> <a
-                    href="https://www.imperial.ac.uk/natural-sciences/about-us/outreach/rcsu-science-challenge/past-winners/">Best
-                    feature article, RSCU Science Challenge 2019</a> </li>
-            <li> Extracurricular university courses: pass with merit in French (CEFR-B1) and pass with distintion in
-                creative writing</li>
-            <li> National Citizenship Service Award </li>
-        </ul>
+      <h3>Achievements:</h3>
+      <ul>
+        <li>
+          Polaron wins the
+          <a
+            href="https://www.gov.uk/government/news/british-start-up-wins-1-million-ai-prize-for-breakthrough-slashing-materials-development-from-years-to-days"
+            >Government's £1M AI prize</a
+          >
+        </li>
+        <li>
+          Winner
+          <a href="https://www.youtube.com/watch?v=nMNW8fdlKCw&t=345s"
+            >(Best educational hack) IC Hack 2020</a
+          >; Runner up at Oxford Hack 2019
+        </li>
+        <li>
+          <a
+            href="https://www.imperial.ac.uk/natural-sciences/about-us/outreach/rcsu-science-challenge/past-winners/"
+            >Best feature article, RSCU Science Challenge 2019</a
+          >
+        </li>
+        <li>
+          Extracurricular university courses: pass with merit in French
+          (CEFR-B1) and pass with distintion in creative writing
+        </li>
+        <li>National Citizenship Service Award</li>
+      </ul>
 
-    
-
-        <div  class="centeredContainer"><a href="#title">Top</a></div>
+      <div class="centeredContainer"><a href="#title">Top</a></div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
